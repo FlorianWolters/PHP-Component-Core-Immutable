@@ -1,5 +1,5 @@
 {
-    "name": "florianwolters/component-core-Immutable",
+    "name": "florianwolters/component-core-immutable",
     "description": "The Immutable Object implementation pattern as a PHP component.",
     "type": "library",
     "keywords": ["immutable", "immutable object", "immutable class", "core"],
