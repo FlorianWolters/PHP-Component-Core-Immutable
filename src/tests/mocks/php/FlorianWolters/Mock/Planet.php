@@ -52,7 +52,7 @@ final class Planet implements ImmutableInterface
     {
         // Make sure that a call to the magic method __construct (via
         // $obj->__construct()) throws an exception of class
-        // FlorianWolters\Component\CoreImmutableException.
+        // FlorianWolters\Component\Core\ImmutableException.
         $this->throwImmutableExceptionIfConstructed();
 
         $this->name = $name;
