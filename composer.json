@@ -1,0 +1,27 @@
+{
+    "name": "florianwolters/component-core-Immutable",
+    "description": "The Immutable Object implementation pattern as a PHP component.",
+    "type": "library",
+    "keywords": ["immutable", "immutable object", "immutable class", "core"],
+    "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-Immutable",
+    "license": "LGPL-3.0+",
+    "authors": [
+      {
+        "name": "Florian Wolters",
+        "email": "wolters.fl@gmail.com",
+        "homepage": "http://blog.florianwolters.de",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "FlorianWolters": [
+                "src/php",
+                "src/tests/mocks/php"
+            ]
+        }
+    }
+}

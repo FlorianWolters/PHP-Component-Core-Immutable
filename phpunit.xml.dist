@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ! phpunit.xml.dist
+ !
+ ! XML configuration file for the unit testing framework "PHPUnit".
+ !
+ ! This program is free software: you can redistribute it and/or modify it under
+ ! the terms of the GNU Lesser General Public License as published by the Free
+ ! Software Foundation, either version 3 of the License, or (at your option) any
+ ! later version.
+ !
+ ! This program is distributed in the hope that it will be useful, but WITHOUT
+ ! ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ ! FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ ! details.
+ !
+ ! You should have received a copy of the GNU Lesser General Public License
+ ! along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
+ !
+ ! Author:    Florian Wolters <wolters.fl@gmail.com>
+ ! Copyright: 2012-2013 Florian Wolters
+ ! License:   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ ! Link:      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
+ !-->
+
+<!--
+ ! The attributes of the <phpunit> element can be used to configure PHPUnit's
+ ! core functionality.
+ !-->
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         cacheTokens="true"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="true"
+         mapTestClassNameToCoveredClassName="true"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         strict="true"
+         verbose="false">
+
+    <!--
+     ! The <testsuites> element and its one or more <testsuite> children can be
+     ! used to compose a test suite out of test suites and test cases.
+     !-->
+    <testsuites>
+        <testsuite name="Unit (Classes) Test Suite">
+            <directory>src/tests/unit-tests/php</directory>
+        </testsuite>
+    </testsuites>
+
+    <!--
+     ! The <filter> element and its children can be used to configure the
+     ! blacklist and whitelist for the code coverage reporting.
+     !-->
+    <filter>
+        <blacklist>
+            <directory suffix=".php">vendor</directory>
+            <directory suffix=".php">src/tests</directory>
+        </blacklist>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/bin</directory>
+            <directory suffix=".php">src/php</directory>
+            <exclude>
+                <directory suffix="Enum.php">src/php</directory>
+                <directory suffix="Exception.php">src/php</directory>
+                <directory suffix="Interface.php">src/php</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <!--
+     ! The <logging> element and its <log> children can be used to configure the
+     ! logging of the test execution.
+     !-->
+    <logging>
+        <log type="coverage-clover" target="review/phpcov/coverage.xml" />
+        <log type="coverage-html"
+             target="review/phpcov/coverage"
+             showUncoveredFiles="true"
+             charset="UTF-8"
+             yui="true"
+             highlight="true"
+             lowUpperBound="35"
+             highLowerBound="70" />
+        <log type="coverage-php"
+             target="review/phpcov/coverage.serialized"
+             showUncoveredFiles="true" />
+        <log type="coverage-text"
+             target="review/phpcov/coverage.txt"
+             showUncoveredFiles="true" />
+        <log type="json" target="review/phpunit/phpunit.json" />
+        <log type="junit"
+             target="review/phpunit/junit.xml"
+             logIncompleteSkipped="true" />
+        <log type="tap" target="review/phpunit/phpunit.tap" />
+        <log type="testdox-html" target="review/phpunit/testdox.html" />
+        <log type="testdox-text" target="review/phpunit/testdox.txt" />
+    </logging>
+
+    <!--
+     ! The <php> element and its children can be used to configure PHP settings,
+     ! constants, and global variables. It can also be used to prepend the
+     ! include_path.
+     ! -->
+    <php>
+        <ini name="error_reporting" value="-1" />
+        <ini name="display_errors" value="1" />
+        <ini name="display_startup_errors" value="1" />
+        <ini name="log_errors" value="On" />
+        <ini name="log_errors_max_len" value="0" />
+        <ini name="ignore_repeated_errors" value="0" />
+        <ini name="ignore_repeated_source" value="0" />
+        <ini name="report_memleaks" value="1" />
+        <ini name="track_errors" value="1" />
+        <ini name="html_errors" value="0" />
+        <ini name="xmlrpc_errors" value="0" />
+        <ini name="xmlrpc_error_number" value="0" />
+        <ini name="docref_root" value=".php" />
+        <ini name="error_prepend_string" value="" />
+        <ini name="error_append_string" value="" />
+        <ini name="memory_limit" value="1024M" />
+        <ini name="short_open_tag" value="0" />
+    </php>
+
+</phpunit>
