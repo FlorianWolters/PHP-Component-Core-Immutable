@@ -1,0 +1,65 @@
+{
+    "hash": "b14536dbb361f8ee9933a01c281e18c0",
+    "packages": [
+        {
+            "name": "florianwolters/component-core-cloneable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlorianWolters/PHP-Component-Core-Cloneable.git",
+                "reference": "9b72925032eab8fa0bfbb753999b8d7154a1d3d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-Cloneable/zipball/9b72925032eab8fa0bfbb753999b8d7154a1d3d9",
+                "reference": "9b72925032eab8fa0bfbb753999b8d7154a1d3d9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "FlorianWolters": "src/php"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Wolters",
+                    "email": "wolters.fl@gmail.com",
+                    "homepage": "http://blog.florianwolters.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allows and disallows the cloning of objects as a PHP component.",
+            "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-Cloneable",
+            "keywords": [
+                "clone",
+                "cloning",
+                "creation"
+            ],
+            "time": "2013-03-01 14:28:52"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "florianwolters/component-core-cloneable": 20
+    },
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": [
+
+    ]
+}
