@@ -51,7 +51,7 @@ class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
      * @return void
      *
      * @coversDefaultClass __set
-     * @expectedException \BadMethodCallException
+     * @expectedException FlorianWolters\Component\Core\ImmutableException
      * @test
      */
     public function testMagicSetThrowsException()
@@ -63,7 +63,7 @@ class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
      * @return void
      *
      * @coversDefaultClass __construct
-     * @expectedException \BadMethodCallException
+     * @expectedException FlorianWolters\Component\Core\ImmutableException
      * @test
      */
     public function testDirectCallOfConstructorThrowsException()
@@ -76,5 +76,17 @@ class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
         );
 
         $planet->__construct('WTF', 13, $this->getMock('\DateTime'));
+    }
+    
+    /**
+     * @return void
+     *
+     * @coversDefaultClass __clone
+     * @expectedException FlorianWolters\Component\Core\CloneNotSupportedException
+     * @test
+     */
+    public function testCloneNotSupported()
+    {
+        clone $this->traitObject;
     }
 }

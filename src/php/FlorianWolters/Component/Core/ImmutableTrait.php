@@ -19,6 +19,8 @@ namespace FlorianWolters\Component\Core;
  */
 trait ImmutableTrait
 {
+    use CloneNotSupportedTrait;
+
     /**
      * `true` if the object using this trait has been constructed already,
      * `false` otherwise.
