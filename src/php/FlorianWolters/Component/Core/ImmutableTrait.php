@@ -55,7 +55,7 @@ trait ImmutableTrait
      * @return void
      * @throws ImmutableException Always.
      */
-    private function throwImmutableException()
+    final private function throwImmutableException()
     {
         throw new ImmutableException('The object is immutable.');
     }
