@@ -61,14 +61,15 @@ trait ImmutableTrait
     }
 
     /**
+     * Constructs a new **Immutable Object**.
+     *
      * Throws an {@see ImmutableException} if the object using this trait has
      * been constructed already.
      *
-     * @return void
      * @throws ImmutableException If the object using this trait has been
      *                            constructed already.
      */
-    private function throwImmutableExceptionIfConstructed()
+    public function __construct()
     {
         if (true === $this->constructed) {
             $this->throwImmutableException();

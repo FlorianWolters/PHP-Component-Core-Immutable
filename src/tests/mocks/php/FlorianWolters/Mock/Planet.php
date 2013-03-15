@@ -17,7 +17,9 @@ use FlorianWolters\Component\Core\ImmutableTrait;
  */
 final class Planet implements ImmutableInterface
 {
-    use ImmutableTrait;
+    use ImmutableTrait {
+        __construct as constructImmutable;
+    }
 
     /**
      * The name of this planet.
@@ -53,7 +55,7 @@ final class Planet implements ImmutableInterface
         // Make sure that a call to the magic method __construct (via
         // $obj->__construct()) throws an exception of class
         // FlorianWolters\Component\Core\ImmutableException.
-        $this->throwImmutableExceptionIfConstructed();
+        $this->constructImmutable();
 
         $this->name = $name;
         $this->mass = $mass;
