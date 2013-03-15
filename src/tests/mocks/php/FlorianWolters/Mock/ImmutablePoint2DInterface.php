@@ -1,6 +1,8 @@
 <?php
 namespace FlorianWolters\Mock;
 
+use FlorianWolters\Component\Core\ImmutableInterface;
+
 /**
  * The interface {@see ImmutablePoint2DInterface} is an **Immutable Interface**
  * for the mutable class {@see Point2D}.
@@ -11,7 +13,7 @@ namespace FlorianWolters\Mock;
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
  * @since     Interface available since Release 0.1.0
  */
-interface ImmutablePoint2DInterface
+interface ImmutablePoint2DInterface extends ImmutableInterface
 {
     /**
      * @return integer

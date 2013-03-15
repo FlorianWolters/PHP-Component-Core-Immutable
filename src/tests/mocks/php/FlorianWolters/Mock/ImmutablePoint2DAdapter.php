@@ -1,6 +1,8 @@
 <?php
 namespace FlorianWolters\Mock;
 
+use FlorianWolters\Component\Core\ImmutableTrait;
+
 /**
  * The class {@see ImmutablePoint2DAdapter} is an **Object Adapter** for the
  * mutable class {@see Point2D}.
@@ -13,6 +15,10 @@ namespace FlorianWolters\Mock;
  */
 class ImmutablePoint2DAdapter implements ImmutablePoint2DInterface
 {
+    use ImmutableTrait {
+        ImmutableTrait::__construct as constructImmutable;
+    }
+
     /**
      * @var Point2D
      */
@@ -23,6 +29,7 @@ class ImmutablePoint2DAdapter implements ImmutablePoint2DInterface
      */
     public function __construct(Point2D $point2D)
     {
+        $this->constructImmutable();
         $this->point2D = $point2D;
     }
 

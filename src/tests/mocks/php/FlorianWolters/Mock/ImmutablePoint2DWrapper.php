@@ -1,7 +1,6 @@
 <?php
 namespace FlorianWolters\Mock;
 
-use FlorianWolters\Component\Core\ImmutableInterface;
 use FlorianWolters\Component\Core\ImmutableTrait;
 
 /**
@@ -21,9 +20,23 @@ use FlorianWolters\Component\Core\ImmutableTrait;
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
  * @since     Class available since Release 0.1.0
  */
-final class ImmutablePoint2DWrapper extends Point2D implements ImmutableInterface
+final class ImmutablePoint2DWrapper
+    extends Point2D
+    implements ImmutablePoint2DInterface
 {
-    use ImmutableTrait;
+    use ImmutableTrait {
+        ImmutableTrait::__construct as constructImmutable;
+    }
+
+    /**
+     * @param integer $x
+     * @param integer $y
+     */
+    public function __construct($x, $y)
+    {
+        $this->constructImmutable();
+        parent::__construct($x, $y);
+    }
 
     /**
      * @param integer $x
