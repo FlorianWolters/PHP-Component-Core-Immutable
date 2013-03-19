@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "florianwolters/component-core-cloneable": "dev-master"
+        "florianwolters/component-core-cloneable": "0.2.*"
     },
     "autoload": {
         "psr-0": {
