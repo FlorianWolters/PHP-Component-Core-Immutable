@@ -3,8 +3,8 @@
 **FlorianWolters\Component\Core\Immutable** is a simple-to-use [PHP][1] component that implements the **Immutable Object** implementation pattern.
 
 [![Build Status](https://travis-ci.org/FlorianWolters/PHP-Component-Core-Immutable.svg?branch=master)](https://travis-ci.org/FlorianWolters/PHP-Component-Core-Immutable)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/badges/quality-score.png?s=0744ad1bafd52212a1611a009fba51c30e43269f)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/)
-[![Code Coverage](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/badges/coverage.png?s=994c9213d82eeadd3ecd8516a87d30cd95e07771)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9f1eee4b-fb13-466d-a4b0-2696a954f82b/mini.png)](https://insight.sensiolabs.com/projects/9f1eee4b-fb13-466d-a4b0-2696a954f82b)
 [![Coverage Status](https://coveralls.io/repos/FlorianWolters/PHP-Component-Core-Immutable/badge.png?branch=master)](https://coveralls.io/r/FlorianWolters/PHP-Component-Core-Immutable?branch=master)
 
@@ -47,7 +47,7 @@
 > decreased overhead due to garbage collection, and the elimination of code
 > needed to protect mutable objects from corruption.
 
--- [Immutable Objects (The Java Tutorials)][52]
+-- [Immutable Objects (The Java Tutorials)][53]
 
 ## Features
 
@@ -67,8 +67,8 @@
         * [VersionEye][24]
         * [Depending][25]
         * [Waffle][26]
-* Provides a [Packagist][3] package which can be installed using the dependency manager [Composer][2]. Click [here][50] for the package on [Packagist][3].
-* Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [phpDocumentor][46]. Click [here][51] for the API documentation.
+* Provides a [Packagist][3] package which can be installed using the dependency manager [Composer][2]. Click [here][51] for the package on [Packagist][3].
+* Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [phpDocumentor][46]. Click [here][52] for the API documentation.
 * Follows the following "standards" from the [PHP Framework Interoperability Group (FIG)][10]. PSR stands for PHP Standards Recommendation:
     * [PSR-0][11]: Autoloading Standards
 
@@ -90,7 +90,7 @@
 
 * [PHP][1] >= 5.4
 * [Composer][2]
-* [FlorianWolters/PHP-Component-Core-Cloneable][53]
+* [FlorianWolters/PHP-Component-Core-Immutable][54]
 
 ### Development
 
@@ -142,8 +142,8 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Credits
 
-* [Florian Wolters][60]
-* [All Contributors][61]
+* [Florian Wolters][9]
+* [All Contributors][50]
 
 ## License
 
@@ -167,6 +167,8 @@ with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
      "Packagist"
 [4]: http://semver.org
      "Semantic Versioning"
+[9]: https://github.com/FlorianWolters
+     "FlorianWolters · GitHub"
 [10]: http://php-fig.org
       "PHP-FIG — PHP Framework Interop Group"
 [11]: http://php-fig.org/psr/psr-0
@@ -211,15 +213,13 @@ with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
       "SensioLabs Security Checker"
 [48]: https://github.com/satooshi/php-coveralls
       "satooshi/php-coveralls · GitHub"
-[50]: https://packagist.org/packages/florianwolters/component-core-immutable
-      "florianwolters/component-core-immutable - Packagist"
-[51]: http://blog.florianwolters.de/PHP-Component-Core-Immutable
-      "Application Programming Interface (API) documentation"
-[52]: http://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html
-      "Immutable Objects (The Java Tutorials)"
-[53]: https://github.com/FlorianWolters/PHP-Component-Core-Cloneable
-      "FlorianWolters/PHP-Component-Core-Cloneable · GitHub"
-[60]: https://github.com/FlorianWolters
-      "FlorianWolters · GitHub"
-[61]: https://github.com/FlorianWolters/PHP-Component-Core-Immutable/contributors
+[50]: https://github.com/FlorianWolters/PHP-Component-Core-Immutable/contributors
       "Contributors to FlorianWolters/PHP-Component-Core-Immutable"
+[51]: https://packagist.org/packages/florianwolters/component-core-immutable
+      "florianwolters/component-core-immutable - Packagist"
+[52]: http://blog.florianwolters.de/PHP-Component-Core-Immutable
+      "Application Programming Interface (API) documentation"
+[53]: http://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html
+      "Immutable Objects (The Java Tutorials)"
+[54]: https://github.com/FlorianWolters/PHP-Component-Core-Immutable
+      "FlorianWolters/PHP-Component-Core-Immutable · GitHub"
