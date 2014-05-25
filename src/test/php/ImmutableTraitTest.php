@@ -12,12 +12,12 @@
 
 namespace FlorianWolters\Component\Core;
 
-use FlorianWolters\Mock\Planet;
+use FlorianWolters\Example\Planet;
 
 /**
  * Test class for {@see ImmutableTrait}.
  *
- * @since Class available since Release 0.1.0
+ * @since  Class available since Release 0.1.0
  * @covers FlorianWolters\Component\Core\ImmutableTrait
  */
 class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
@@ -56,7 +56,8 @@ class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
     /**
      * @return void
      *
-     * @coversDefaultClass __set
+     * @coversDefault __set
+     * @coversDefault throwImmutableException
      * @expectedException FlorianWolters\Component\Core\ImmutableException
      * @test
      */
@@ -68,7 +69,8 @@ class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
     /**
      * @return void
      *
-     * @coversDefaultClass __construct
+     * @coversDefault throwImmutableException
+     * @covers FlorianWolters\Example\Planet::__construct
      * @expectedException FlorianWolters\Component\Core\ImmutableException
      * @test
      */
@@ -87,7 +89,7 @@ class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
     /**
      * @return void
      *
-     * @coversDefaultClass __clone
+     * @covers FlorianWolters\Component\Core\ImmutableTrait::__clone
      * @expectedException FlorianWolters\Component\Core\CloneNotSupportedException
      * @test
      */

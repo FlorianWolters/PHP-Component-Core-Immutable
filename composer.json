@@ -15,12 +15,12 @@
     ],
     "require": {
         "php": ">=5.4",
-        "florianwolters/component-core-cloneable": "0.2.*"
+        "florianwolters/component-core-cloneable": "0.*"
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "2.*",
-        "pdepend/pdepend": "2.0.*@dev",
-        "phpmd/phpmd": "2.0.*@dev",
+        "pdepend/pdepend": "2.0.*",
+        "phpmd/phpmd": "2.0.*",
         "phpunit/phpunit": "4.1.*",
         "sebastian/phpcpd": "2.0.*",
         "sebastian/phpdcd": "1.0.*",
@@ -29,10 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "FlorianWolters\\": [
-                "src/php/FlorianWolters",
-                "src/tests/mocks/php/FlorianWolters"
-            ]
+            "FlorianWolters\\Component\\Core\\": "src/main/php",
+            "FlorianWolters\\Example\\": "src/test/resources"
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * FlorianWolters\Mock\Planet
+ * FlorianWolters\Example\Planet
  *
  * PHP Version 5.4
  *
@@ -10,7 +10,7 @@
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
  */
 
-namespace FlorianWolters\Mock;
+namespace FlorianWolters\Example;
 
 use \DateTime;
 

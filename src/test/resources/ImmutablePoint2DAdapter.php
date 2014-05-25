@@ -1,6 +1,6 @@
 <?php
 /**
- * FlorianWolters\Mock\ImmutablePoint2DAdapter
+ * FlorianWolters\Example\ImmutablePoint2DAdapter
  *
  * PHP Version 5.4
  *
@@ -10,7 +10,7 @@
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
  */
 
-namespace FlorianWolters\Mock;
+namespace FlorianWolters\Example;
 
 use FlorianWolters\Component\Core\ImmutableTrait;
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * FlorianWolters\Mock\Point2D
+ * FlorianWolters\Example\Point2D
  *
  * PHP Version 5.4
  *
@@ -10,7 +10,7 @@
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
  */
 
-namespace FlorianWolters\Mock;
+namespace FlorianWolters\Example;
 
 /**
  * The class {@see Point2D} represents a two-dimensional point.

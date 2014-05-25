@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93b28cb51baca5ebfdb980a307dc6733",
+    "hash": "ca7f02a6d41242f62f38194931655b48",
     "packages": [
         {
             "name": "florianwolters/component-core-cloneable",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlorianWolters/PHP-Component-Core-Cloneable.git",
-                "reference": "v0.2.0"
+                "reference": "3067ab2a36b2b3e21d2ab3053229db05c257047f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-Cloneable/zipball/v0.2.0",
-                "reference": "v0.2.0",
+                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-Cloneable/zipball/3067ab2a36b2b3e21d2ab3053229db05c257047f",
+                "reference": "3067ab2a36b2b3e21d2ab3053229db05c257047f",
                 "shasum": ""
             },
             "require": {
@@ -61,8 +61,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "pdepend/pdepend": 20,
-        "phpmd/phpmd": 20,
         "satooshi/php-coveralls": 20,
         "squizlabs/php_codesniffer": 20
     },
