@@ -91,6 +91,7 @@
 * [PHP Mess Detector (PHPMD)][18]
 * [PDepend][9]
 * [phpDocumentor][2]
+* [SensioLabs Security Checker][12]
 * [php-coveralls][10]
 
 ## Usage
@@ -170,6 +171,8 @@ with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
       "satooshi/php-coveralls · GitHub"
 [11]: https://github.com/FlorianWolters/PHP-Component-Core-Cloneable
       "FlorianWolters/PHP-Component-Core-Cloneable · GitHub"
+[12]: https://github.com/sensiolabs/security-checker
+      "sensiolabs/security-checker · GitHub"
 [14]: http://pear.php.net/package/PHP_CodeSniffer
       "PHP_CodeSniffer"
 [16]: https://github.com/stuartherbert/phix4componentdev

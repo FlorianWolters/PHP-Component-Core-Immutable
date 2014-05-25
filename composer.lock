@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca7f02a6d41242f62f38194931655b48",
+    "hash": "ae7491359d615604e950f13798594285",
     "packages": [
         {
             "name": "florianwolters/component-core-cloneable",
