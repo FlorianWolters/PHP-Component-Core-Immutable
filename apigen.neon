@@ -16,14 +16,17 @@
 # with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
 #
 # Author:    Florian Wolters <wolters.fl@gmail.com>
-# Copyright: 2012-2013 Florian Wolters
+# Copyright: 2012-2014 Florian Wolters
 # License:   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
 # Link:      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
 
-source: src/php
+source:
+    - src/php
+    - vendor
 destination: review/api
 exclude:
 skipDocPath:
+    - "D:/Users/Florian/Dropbox/dev/Component/Core/Immutable/vendor/*"
 skipDocPrefix:
 main:
 title: FlorianWolters\Component\Core
