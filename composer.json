@@ -17,11 +17,21 @@
         "php": ">=5.4",
         "florianwolters/component-core-cloneable": "0.2.*"
     },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*",
+        "pdepend/pdepend": "2.0.*@dev",
+        "phpmd/phpmd": "2.0.*@dev",
+        "phpunit/phpunit": "4.1.*",
+        "sebastian/phpcpd": "2.0.*",
+        "sebastian/phpdcd": "1.0.*",
+        "satooshi/php-coveralls": "dev-master",
+        "squizlabs/php_codesniffer": "2.0.*@dev"
+    },
     "autoload": {
-        "psr-0": {
-            "FlorianWolters": [
-                "src/php",
-                "src/tests/mocks/php"
+        "psr-4": {
+            "FlorianWolters\\": [
+                "src/php/FlorianWolters",
+                "src/tests/mocks/php/FlorianWolters"
             ]
         }
     }

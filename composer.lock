@@ -1,18 +1,23 @@
 {
-    "hash": "b14536dbb361f8ee9933a01c281e18c0",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "93b28cb51baca5ebfdb980a307dc6733",
     "packages": [
         {
             "name": "florianwolters/component-core-cloneable",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlorianWolters/PHP-Component-Core-Cloneable.git",
-                "reference": "9b72925032eab8fa0bfbb753999b8d7154a1d3d9"
+                "reference": "v0.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-Cloneable/zipball/9b72925032eab8fa0bfbb753999b8d7154a1d3d9",
-                "reference": "9b72925032eab8fa0bfbb753999b8d7154a1d3d9",
+                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-Cloneable/zipball/v0.2.0",
+                "reference": "v0.2.0",
                 "shasum": ""
             },
             "require": {
@@ -21,7 +26,11 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "FlorianWolters": "src/php"
+                    "FlorianWolters": [
+                        "src/php",
+                        "src/tests/mocks/php",
+                        "src/tests/unit-tests/php"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,18 +52,19 @@
                 "cloning",
                 "creation"
             ],
-            "time": "2013-03-01 14:28:52"
+            "time": "2013-03-19 16:49:12"
         }
     ],
-    "packages-dev": [
-
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "florianwolters/component-core-cloneable": 20
+        "pdepend/pdepend": 20,
+        "phpmd/phpmd": 20,
+        "satooshi/php-coveralls": 20,
+        "squizlabs/php_codesniffer": 20
     },
     "platform": {
         "php": ">=5.4"
