@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="FlorianWolters\Component\Core" version="2.5.0&#10;">
+  <partials/>
+  <file path="ImmutableInterface.php" generated-path="ImmutableInterface.html" hash="9682097fb435eeacd294adfec3063a2b" package="global">
+    <docblock line="0">
+      <description>FlorianWolters\Component\Core\ImmutableInterface</description>
+      <long-description>PHP Version 5.4</long-description>
+      <tag name="author" line="0" description="Florian Wolters" link="mailto:wolters.fl@gmail.com"/>
+      <tag name="copyright" line="0" description="2012-2014 Florian Wolters (http://blog.florianwolters.de)"/>
+      <tag name="license" line="0" description="LGPL-3.0+" link="http://gnu.org/licenses/lgpl.txt"/>
+      <tag name="link" line="0" description="http://github.com/FlorianWolters/PHP-Component-Core-Immutable" link="http://github.com/FlorianWolters/PHP-Component-Core-Immutable"/>
+    </docblock>
+    <interface namespace="FlorianWolters\Component\Core" line="27" package="global">
+      <name>ImmutableInterface</name>
+      <full_name>\FlorianWolters\Component\Core\ImmutableInterface</full_name>
+      <docblock line="27">
+        <description>The interface {@see ImmutableInterface} can be implemented by a class to mark
+its instances as **Immutable Objects**.</description>
+        <long-description>The {@see ImmutableInterface} has no methods or fields and serves only to
+identify the class with the semantics of being immutable.
+
+This interface is a **Marker Interface** that can be used to implement an
+**Immutable Object**.</long-description>
+        <tag name="since" line="27" description="Interface available since Release 0.1.0"/>
+      </docblock>
+    </interface>
+    <source>eJx9k01v1DAQhu+R8h/mWIKSbEt7gQpWQgIqFbFCqFx6cZJJYuqPyHZaVlX/O28+u2ihPkR2xvPMO+8klx+6toujPEniiBL6pKyTwvy0KrDztx+t7qxhE7BzfHuldR9EofjKIFyLkoekMXH3ZUc3SJHW0EV2vr7fij601hHWzKYZTpcP0yar1bbRQqqstPr9lFXabu9k0wY625yepXicH+WftCF0b/O8ULYBYwwuyIpfTSAlSzaeUX6+3Zg+s67J54DPVdOpLPwOdP15d52+yTavl0xzR+NaMmVo+2IQmf9tU47m09WqdLAqXa0aYHkcxZERmn0Hz142+d1wdxnHj5ZJLl7T49Yz0/EQnqiELQWu6k6xBokrKvYkqFTCewqWtHB3I1EGD6IPwpTsSXhKkhVI34pfXAafJNk6v0HB/+u2ABjQGTOuPGHOtWSFnTAVeXb3qGGN2kPCVL2COFnjDOwk7gGujkfPWiBYIqNGM9I06GcueahH+gNLcBBo4SvaY0ersiQBUoTFl97DELiw+gN9I+24+cPet17CpWcqiXt8pePlKfKdFQt8XJvsNNvMg37W9q+/5TGOnuLoD6o1H2k=</source>
+  </file>
+  <file path="ImmutableException.php" generated-path="ImmutableException.html" hash="c1b8dc277fc6f3c638ea04a339c5397d" package="global">
+    <docblock line="0">
+      <description>FlorianWolters\Component\Core\ImmutableException</description>
+      <long-description>PHP Version 5.4</long-description>
+      <tag name="author" line="0" description="Florian Wolters" link="mailto:wolters.fl@gmail.com"/>
+      <tag name="copyright" line="0" description="2012-2014 Florian Wolters (http://blog.florianwolters.de)"/>
+      <tag name="license" line="0" description="LGPL-3.0+" link="http://gnu.org/licenses/lgpl.txt"/>
+      <tag name="link" line="0" description="http://github.com/FlorianWolters/PHP-Component-Core-Immutable" link="http://github.com/FlorianWolters/PHP-Component-Core-Immutable"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="FlorianWolters\Component\Core" line="24" package="global">
+      <extends>\BadMethodCallException</extends>
+      <name>ImmutableException</name>
+      <full_name>\FlorianWolters\Component\Core\ImmutableException</full_name>
+      <docblock line="24">
+        <description>The exception class {@see ImmutableException} can be thrown when trying to
+modify an **Immutable Object**.</description>
+        <long-description></long-description>
+        <tag name="since" line="24" description="Class available since Release 0.1.0"/>
+        <tag name="see" line="24" description="" link="\FlorianWolters\Component\Core\ImmutableTrait"/>
+      </docblock>
+    </class>
+    <source>eJx9UctOwzAQvEfKP+wRguKUAhdAUFHxkoqoEIJLL06yJAbHjuwNbVX133GegIrwwbJ2Z8azs+eXZV76XhQEvgcB3EhtBFevWhIau5jqotQKFbmXwcV9UVTEY4nXqwRLElrVpIY4v5vDi6O4Gpyw46E+4RXl2oA7nTZ04nC+bB/sTU6yggvJEl1ctKxEl2sjspxgPDoch+463uHv5UTlaRTFUmdOo2n2kinut0JSJKgsuu87dKYqpk0WdQ0byayUjFYEs9v5LDxio4OeqT6gOT1TUF7Ftcnod0yRGz4cogrrqMIhqlos8j3fU7xAW/IE/w/5rMZWzvHiiqcP6MJLp1zKIfGm36/rOUfAvgOJ5NbCZmIRYXdVW0hceDEC5UYvFSxzVEBmLVQGpBu5QqfibQ0OFgSDADzG75hQELDvpVqh3BzT5j/+6VbXANvqE0rkzv+IHbJRB/9p6NlwQV0qreNdr24oQpVa+DsD39v43tb3vgDpY+O4</source>
+  </file>
+  <file path="ImmutableTrait.php" generated-path="ImmutableTrait.html" hash="4b44b0f5b2c47141c97d1de2e38ba25d" package="global">
+    <docblock line="0">
+      <description>FlorianWolters\Component\Core\ImmutableTrait</description>
+      <long-description>PHP Version 5.4</long-description>
+      <tag name="author" line="0" description="Florian Wolters" link="mailto:wolters.fl@gmail.com"/>
+      <tag name="copyright" line="0" description="2012-2014 Florian Wolters (http://blog.florianwolters.de)"/>
+      <tag name="license" line="0" description="LGPL-3.0+" link="http://gnu.org/licenses/lgpl.txt"/>
+      <tag name="link" line="0" description="http://github.com/FlorianWolters/PHP-Component-Core-Immutable" link="http://github.com/FlorianWolters/PHP-Component-Core-Immutable"/>
+    </docblock>
+    <trait namespace="FlorianWolters\Component\Core" line="28" package="global">
+      <name>ImmutableTrait</name>
+      <full_name>\FlorianWolters\Component\Core\ImmutableTrait</full_name>
+      <docblock line="28">
+        <description>The trait {@see ImmutableTrait} helps to implement the **Immutable Object**
+implementation pattern.</description>
+        <long-description>The trait implements the following:
+
+* Avoids setting of inaccessible properties (`$obj-&gt;value = 'foo'`).
+* Avoids calling the constructor on an object directly
+  (`$obj-&gt;__construct()`).</long-description>
+        <tag name="since" line="28" description="Trait available since Release 0.1.0"/>
+        <tag name="see" line="28" description="" link="\FlorianWolters\Component\Core\ImmutableException"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="FlorianWolters\Component\Core" line="39" package="global">
+        <name>$constructed</name>
+        <full_name>\FlorianWolters\Component\Core\ImmutableTrait::constructed</full_name>
+        <default>false</default>
+        <docblock line="39">
+          <description>`true` if the object using this trait has been constructed already,
+`false` otherwise.</description>
+          <long-description></long-description>
+          <tag name="var" line="39" description="" type="boolean" variable="">
+            <type>boolean</type>
+          </tag>
+          <tag name="todo" line="39" description="Find a solutions that does not require a member attribute."/>
+        </docblock>
+      </property>
+      <method final="true" abstract="false" static="false" visibility="public" namespace="FlorianWolters\Component\Core" line="55" package="global">
+        <name>__set</name>
+        <full_name>\FlorianWolters\Component\Core\ImmutableTrait::__set()</full_name>
+        <docblock line="55">
+          <description>Throws an {@see ImmutableException}.</description>
+          <long-description>Always throws an {@see ImmutableException} when trying to set an
+inaccessible property.</long-description>
+          <tag name="param" line="55" description="&lt;p&gt;Not used.&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="55" description="&lt;p&gt;Not used.&lt;/p&gt;" type="mixed" variable="$value">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="55" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="throws" line="55" description="Always." type="\FlorianWolters\Component\Core\ImmutableException">
+            <type>\FlorianWolters\Component\Core\ImmutableException</type>
+          </tag>
+          <tag name="SuppressWarnings" line="55" description="(PHPMD.UnusedFormalParameter)"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="true" abstract="false" static="false" visibility="private" namespace="FlorianWolters\Component\Core" line="66" package="global">
+        <name>throwImmutableException</name>
+        <full_name>\FlorianWolters\Component\Core\ImmutableTrait::throwImmutableException()</full_name>
+        <docblock line="66">
+          <description>Throws an {@see ImmutableException}.</description>
+          <long-description></long-description>
+          <tag name="return" line="66" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="throws" line="66" description="Always." type="\FlorianWolters\Component\Core\ImmutableException">
+            <type>\FlorianWolters\Component\Core\ImmutableException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="FlorianWolters\Component\Core" line="80" package="global">
+        <name>__construct</name>
+        <full_name>\FlorianWolters\Component\Core\ImmutableTrait::__construct()</full_name>
+        <docblock line="80">
+          <description>Initializes a new instance of the class using the {@see ImmutableTrait}.</description>
+          <long-description>Throws an {@see ImmutableException} if the object using the {@see
+ImmutableTrait} has been constructed already.</long-description>
+          <tag name="throws" line="80" description="If the object using the {@see ImmutableTrait}&#13;&#10;   has been constructed already." type="\FlorianWolters\Component\Core\ImmutableException">
+            <type>\FlorianWolters\Component\Core\ImmutableException</type>
+          </tag>
+        </docblock>
+      </method>
+    </trait>
+    <markers>
+      <todo line="39">Find a solutions that does not require a member attribute.</todo>
+    </markers>
+    <source>eJytVVFv2zYQfg+Q/3APBmJ7tZR23UtbZym6ZQvQdcGWrS8FEko+W+woHktSdtwi/31HSpZsy8k6bEQQC+Ldd/d935F69b0pzPFROh4fH8EYLhRZKfR7Uh6t+/CGSkMatecnix8uy7LyIlN4bYX0ISEmXf18BX9yuCQN3yXP2/fnovIFWeDV4EIDDK9W9UMyV+eLUkiV5FSe1Vk5mbWVi8LDs9Onzyb873kvf1h4b16kaaZowRhxcwM5w1ENpGSO2iGXb6IXukrILtJmw6VqYVTi7zy8/enq7eTb5PSbTab+C+LaZEpfVFloMt2VKGXyk1amSZBp0soUwNLjo+MjLUp0RuT4uMAvQ+zGiusCwQed4cu5Q4Rd8e+hQGUceAJZGoUlY4DnlPG4DYRfs4+Y+wavDRM+GGWE5w500rrV1WsjXUSck1K0knrxoo0dw+slyZkDh97zDtAcpBZ5js7JUNlYMmi9RLbqdkDZx8nZUqgKYQonc6KT21GyC5QLpQJQKJiTdt5WuefZ4U7ZdopEYCYt/6h1TIUW+eamzRiOGuTaRyc1ax4FA7HkMYuy1G9/Q4WCp+M0eZqcNuEYhqXV78e7HE0Qq/GxVmf/EHzhXV4VQ71R7OU78r9XxpD1OIsh0dUQUjsb1hhuuV28BTmPjBt+laslkK5xohAOMkTdSYIzEMqimK2fdFhzoRyDEUPZlXSYbLbakPOlsJARMWXdvfQ0I7iQmjHBkaoC1+C5YKmJrdPkweKnimXniBLLDC3w3FiZVb6rktYPxsql8AiD7WanEJs7qMF1YWnlgr97E94Kf99n8lqtxDo0+Y+5sCpYOW/XUVQKswpb7A/N6/qAckZYUQITCjCDcJIB2ONg+CzZDyvlHZOGQT3svbAu3KKvrIYw/Ft+1KT6XBrWB3DCqFlm8V5YzQ26Id9Hv/yQ/KFD3QuypVBXoTPkwz7aM2zOEigwVcb3IcwrncdSNzcs1DASfdIQaRKbSQ9rEIZ0chYb7rc7HL2sQ+//N9v/o2C7jJtBbSk/SKPHO0aCxtWBmsOT6+4o8xGWm4jk5FE9LrX0Uij5mU+ciNiSz48IdxTV10OuhHPt7YCHPwh9zb5C6AcuoKZE1+L+t+eRe+mAdw/bdPlY+f2yLSCvr+pgczH1Jnzre9GzmBUZhssZptPpZs63ioy2Y//FUdixfytv97IMhbtZ4b+/AU2d8zA=</source>
+  </file>
+  <package name="global" full_name="global"/>
+  <namespace name="FlorianWolters" full_name="FlorianWolters">
+    <namespace name="Component" full_name="FlorianWolters\Component">
+      <namespace name="Core" full_name="FlorianWolters\Component\Core"/>
+    </namespace>
+  </namespace>
+  <deprecated count="0"/>
+</project>
