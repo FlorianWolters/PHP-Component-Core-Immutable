@@ -30,7 +30,7 @@ skipDocPath:
 skipDocPrefix:
 main:
 title: FlorianWolters\Component\Core
-baseUrl: http://florianwolters.github.com/PHP-Component-Core-Immutable
+baseUrl: http://florianwolters.github.io/PHP-Component-Core-Immutable
 googleCseId:
 googleCseLabel:
 googleAnalytics:
