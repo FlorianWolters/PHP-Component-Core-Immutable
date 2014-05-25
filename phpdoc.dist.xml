@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ! phpdoc.dist.xml
+ !
+ ! XML configuration file for the documentation generator "phpDocumentor".
+ !
+ ! This program is free software: you can redistribute it and/or modify it under
+ ! the terms of the GNU Lesser General Public License as published by the Free
+ ! Software Foundation, either version 3 of the License, or (at your option) any
+ ! later version.
+ !
+ ! This program is distributed in the hope that it will be useful, but WITHOUT
+ ! ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ ! FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ ! details.
+ !
+ ! You should have received a copy of the GNU Lesser General Public License
+ ! along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
+ !
+ ! Author:    Florian Wolters <wolters.fl@gmail.com>
+ ! Copyright: 2012-2014 Florian Wolters
+ ! License:   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ ! Link:      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
+ !-->
+
+<phpdocumentor>
+    <title>FlorianWolters\Component\Core</title>
+    <files>
+        <directory>src/php</directory>
+        <ignore-hidden>on</ignore-hidden>
+        <ignore-symlinks>on</ignore-symlinks>
+    </files>
+    <logging>
+        <level>warn</level>
+        <paths>
+            <default>review/phpdoc/{DATE}.log</default>
+            <errors>review/phpdoc/{DATE}.errors.log</errors>
+        </paths>
+    </logging>
+    <parser>
+        <default-package-name>FlorianWolters</default-package-name>
+        <encoding>utf-8</encoding>
+        <target>build/phpdoc/cache</target>
+        <markers>
+            <item>TODO</item>
+        </markers>
+        <extensions>
+            <extension>php</extension>
+        </extensions>
+        <visibility>public,protected</visibility>
+    </parser>
+    <transformations>
+        <template name="responsive"/>
+    </transformations>
+    <transformer>
+        <target>review/api</target>
+    </transformer>
+</phpdocumentor>
