@@ -80,6 +80,7 @@
 
 * [PHP][17] >= 5.4
 * [Composer][3]
+* [FlorianWolters/PHP-Component-Core-Cloneable][11] 0.*
 
 ### Development
 
@@ -167,6 +168,8 @@ with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
      "PHP Depend - Software Metrics for PHP"
 [10]: https://github.com/satooshi/php-coveralls
       "satooshi/php-coveralls · GitHub"
+[11]: https://github.com/FlorianWolters/PHP-Component-Core-Cloneable
+      "FlorianWolters/PHP-Component-Core-Cloneable · GitHub"
 [14]: http://pear.php.net/package/PHP_CodeSniffer
       "PHP_CodeSniffer"
 [16]: https://github.com/stuartherbert/phix4componentdev
