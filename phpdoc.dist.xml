@@ -26,7 +26,7 @@
 <phpdocumentor>
     <title>FlorianWolters\Component\Core</title>
     <files>
-        <directory>src/php</directory>
+        <directory>src/main/php</directory>
         <ignore-hidden>on</ignore-hidden>
         <ignore-symlinks>on</ignore-symlinks>
     </files>

@@ -21,7 +21,7 @@
 # Link:      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
 
 source:
-    - src/php
+    - src/main/php
     - vendor
 destination: review/api
 exclude:

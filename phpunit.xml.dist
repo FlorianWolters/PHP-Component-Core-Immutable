@@ -56,8 +56,8 @@
      ! used to compose a test suite out of test suites and test cases.
      !-->
     <testsuites>
-        <testsuite name="Unit (Class) Test Suite">
-            <directory>src/tests/unit-tests/php</directory>
+        <testsuite name="Default Test Suite">
+            <directory>src/test/php</directory>
         </testsuite>
     </testsuites>
 
@@ -68,15 +68,14 @@
     <filter>
         <blacklist>
             <directory suffix=".php">vendor</directory>
-            <directory suffix=".php">src/tests</directory>
+            <directory suffix=".php">src/test</directory>
         </blacklist>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">src/bin</directory>
-            <directory suffix=".php">src/php</directory>
+            <directory suffix=".php">src/main/php</directory>
             <exclude>
-                <directory suffix="Enum.php">src/php</directory>
-                <directory suffix="Exception.php">src/php</directory>
-                <directory suffix="Interface.php">src/php</directory>
+                <directory suffix="Enum.php">src/main/php</directory>
+                <directory suffix="Exception.php">src/main/php</directory>
+                <directory suffix="Interface.php">src/main/php</directory>
             </exclude>
         </whitelist>
     </filter>
