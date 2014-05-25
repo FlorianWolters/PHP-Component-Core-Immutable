@@ -1,7 +1,19 @@
 <?php
+/**
+ * FlorianWolters\Mock\Planet
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
+ */
+
 namespace FlorianWolters\Mock;
 
 use \DateTime;
+
 use FlorianWolters\Component\Core\ImmutableInterface;
 use FlorianWolters\Component\Core\ImmutableTrait;
 
@@ -9,11 +21,7 @@ use FlorianWolters\Component\Core\ImmutableTrait;
  * The class {@see Planet} is an immutable class, since there is no way to
  * change its state after construction.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
- * @since     Class available since Release 0.1.0
+ * @since Class available since Release 0.1.0
  */
 final class Planet implements ImmutableInterface
 {
@@ -43,8 +51,8 @@ final class Planet implements ImmutableInterface
     private $dateOfDiscovery;
 
     /**
-     * Constructs a new planet with the specified name, the specified mass and
-     * the specified date of discovery.
+     * Initializes a new instance of the Planet class with the specified name,
+     * the specified mass and the specified date of discovery.
      *
      * @param string   $name            The name of the planet.
      * @param float    $mass            The mass of the planet.
@@ -59,6 +67,7 @@ final class Planet implements ImmutableInterface
 
         $this->name = $name;
         $this->mass = $mass;
+
         // Make a private copy of $dateOfDiscovery. This is the only way to keep
         // the $dateOfDiscovery field private, and shields this class from any
         // changes that the caller may make to the original $dateOfDiscovery

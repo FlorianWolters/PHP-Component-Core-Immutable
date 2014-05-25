@@ -1,4 +1,15 @@
 <?php
+/**
+ * FlorianWolters\Mock\Point2D
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
+ */
+
 namespace FlorianWolters\Mock;
 
 /**
@@ -10,32 +21,34 @@ namespace FlorianWolters\Mock;
  * * It does provide mutator methods ("setters").
  * * It does not forbid access with the magic method `__set`.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
- * @since     Class available since Release 0.1.0
+ * @since Class available since Release 0.1.0
  */
 class Point2D implements ImmutablePoint2DInterface
 {
     /**
+     * The X coordinate of this Point2D.
+     *
      * @var integer
      */
-    private $x;
+    private $xCoordinate;
 
     /**
+     * The Y coordinate of this Point2D.
+     *
      * @var integer
      */
-    private $y;
+    private $yCoordinate;
 
     /**
-     * @param integer $x
-     * @param integer $y
+     * Initializes a new instance of the Point2D class.
+     *
+     * @param integer $xCoordinate The X coordinate of the Point2D.
+     * @param integer $yCoordinate The Y coordinate of the Point2D.
      */
-    public function __construct($x, $y)
+    public function __construct($xCoordinate, $yCoordinate)
     {
-        $this->x = $x;
-        $this->y = $y;
+        $this->xCoordinate = $xCoordinate;
+        $this->yCoordinate = $yCoordinate;
     }
 
     /**
@@ -43,7 +56,7 @@ class Point2D implements ImmutablePoint2DInterface
      */
     public function getX()
     {
-        return $this->x;
+        return $this->xCoordinate;
     }
 
     /**
@@ -51,26 +64,30 @@ class Point2D implements ImmutablePoint2DInterface
      */
     public function getY()
     {
-        return $this->y;
+        return $this->yCoordinate;
     }
 
     /**
-     * @param integer $x
+     * Returns the X coordinate of this point.
+     *
+     * @param integer $xCoordinate The X coordinate of this point.
      *
      * @return void
      */
-    public function setX($x)
+    public function setX($xCoordinate)
     {
-        $this->x = $x;
+        $this->xCoordinate = $xCoordinate;
     }
 
     /**
-     * @param integer $y
+     * Returns the Y coordinate of this point.
+     *
+     * @param integer $yCoordinate The Y coordinate of this point.
      *
      * @return void
      */
-    public function setY($y)
+    public function setY($yCoordinate)
     {
-        $this->y = $y;
+        $this->yCoordinate = $yCoordinate;
     }
 }

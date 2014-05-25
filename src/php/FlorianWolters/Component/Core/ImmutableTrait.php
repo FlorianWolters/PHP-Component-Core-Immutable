@@ -1,4 +1,15 @@
 <?php
+/**
+ * FlorianWolters\Component\Core\ImmutableTrait
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
+ */
+
 namespace FlorianWolters\Component\Core;
 
 /**
@@ -7,15 +18,12 @@ namespace FlorianWolters\Component\Core;
  *
  * The trait implements the following:
  *
- * * Avoids setting of inaccessible properties  (`$obj->value = 'foo`).
+ * * Avoids setting of inaccessible properties (`$obj->value = 'foo'`).
  * * Avoids calling the constructor on an object directly
  *   (`$obj->__construct()`).
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-Immutable
- * @since     Trait available since Release 0.1.0
+ * @since Trait available since Release 0.1.0
+ * @see   ImmutableException
  */
 trait ImmutableTrait
 {
@@ -26,8 +34,7 @@ trait ImmutableTrait
      * `false` otherwise.
      *
      * @var boolean
-     * @todo It must be possible that this attribute is not be modified by
-     *       client code. Find a solutions that does not require a property.
+     * @todo Find a solutions that does not require a member attribute.
      */
     private $constructed = false;
 
@@ -37,12 +44,13 @@ trait ImmutableTrait
      * Always throws an {@see ImmutableException} when trying to set an
      * inaccessible property.
      *
-     * @param string $name  The name of the property to set.
-     * @param mixed  $value The value, the property with the name `$name` should
-     *                      be set to.
+     * @param string $name  Not used.
+     * @param mixed  $value Not used.
      *
      * @return void
      * @throws ImmutableException Always.
+     *
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     final public function __set($name, $value)
     {
@@ -61,13 +69,13 @@ trait ImmutableTrait
     }
 
     /**
-     * Constructs a new **Immutable Object**.
+     * Initializes a new instance of the class using the {@see ImmutableTrait}.
      *
-     * Throws an {@see ImmutableException} if the object using this trait has
-     * been constructed already.
+     * Throws an {@see ImmutableException} if the object using the {@see
+     * ImmutableTrait} has been constructed already.
      *
-     * @throws ImmutableException If the object using this trait has been
-     *                            constructed already.
+     * @throws ImmutableException If the object using the {@see ImmutableTrait}
+     *    has been constructed already.
      */
     public function __construct()
     {
