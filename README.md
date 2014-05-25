@@ -1,8 +1,52 @@
-# FlorianWolters\Component\Core\Immutable
-
-[![Build Status](https://secure.travis-ci.org/FlorianWolters/PHP-Component-Core-Immutable.png?branch=master)](http://travis-ci.org/FlorianWolters/PHP-Component-Core-Immutable)
+# Component\Core\Immutable
 
 **FlorianWolters\Component\Core\Immutable** is a simple-to-use [PHP][17] component that implements the **Immutable Object** implementation pattern.
+
+[![Build Status](https://travis-ci.org/FlorianWolters/PHP-Component-Core-Immutable.svg?branch=master)](https://travis-ci.org/FlorianWolters/PHP-Component-Core-Immutable)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/badges/quality-score.png?s=0744ad1bafd52212a1611a009fba51c30e43269f)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/)
+[![Code Coverage](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/badges/coverage.png?s=994c9213d82eeadd3ecd8516a87d30cd95e07771)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-Immutable/)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/9f1eee4b-fb13-466d-a4b0-2696a954f82b/mini.png)](https://insight.sensiolabs.com/projects/9f1eee4b-fb13-466d-a4b0-2696a954f82b)
+[![Coverage Status](https://coveralls.io/repos/FlorianWolters/PHP-Component-Core-Immutable/badge.png?branch=master)](https://coveralls.io/r/FlorianWolters/PHP-Component-Core-Immutable?branch=master)
+
+[![Latest Stable Version](https://poser.pugx.org/florianwolters/component-core-immutable/v/stable.png)](https://packagist.org/packages/florianwolters/component-core-immutable)
+[![Total Downloads](https://poser.pugx.org/florianwolters/component-core-immutable/downloads.png)](https://packagist.org/packages/florianwolters/component-core-immutable)
+[![Monthly Downloads](https://poser.pugx.org/florianwolters/component-core-immutable/d/monthly.png)](https://packagist.org/packages/florianwolters/component-core-immutable)
+[![Daily Downloads](https://poser.pugx.org/florianwolters/component-core-immutable/d/daily.png)](https://packagist.org/packages/florianwolters/component-core-immutable)
+[![Latest Unstable Version](https://poser.pugx.org/florianwolters/component-core-immutable/v/unstable.png)](https://packagist.org/packages/florianwolters/component-core-immutable)
+[![License](https://poser.pugx.org/florianwolters/component-core-immutable/license.png)](https://packagist.org/packages/florianwolters/component-core-immutable)
+
+[![Stories in Ready](https://badge.waffle.io/florianwolters/php-component-core-immutable.png?label=ready&title=Ready)](https://waffle.io/florianwolters/php-component-core-immutable)
+[![Dependency Status](https://www.versioneye.com/user/projects/51c33102007fcd0002000439/badge.png)](https://www.versioneye.com/user/projects/51c33102007fcd0002000439)
+[![Dependencies Status](https://depending.in/FlorianWolters/PHP-Component-Core-Immutable.png)](http://depending.in/FlorianWolters/PHP-Component-Core-Immutable)
+[![HHVM Status](http://hhvm.h4cc.de/badge/florianwolters/component-core-immutable.png)](http://hhvm.h4cc.de/package/florianwolters/component-core-immutable)
+
+## Table of Contents (ToC)
+
+* [Introduction](#introduction)
+* [Features](#features)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [Installation](#installation)
+* [As A Dependency On Your Component](#as-a-dependency-on-your-component)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [License](#license)
+
+## Introduction
+
+> An object is considered immutable if its state cannot change after it is
+> constructed. Maximum reliance on immutable objects is widely accepted as a
+> sound strategy for creating simple, reliable code.
+>
+> [...]
+>
+> Programmers are often reluctant to employ immutable objects, because they worry
+> about the cost of creating a new object as opposed to updating an object in
+> place. The impact of object creation is often overestimated, and can be offset
+> by some of the efficiencies associated with immutable objects. These include
+> decreased overhead due to garbage collection, and the elimination of code
+> needed to protect mutable objects from corruption.
+(Quoted from [Immutable Objects (The Java Tutorials)][28])
 
 ## Features
 
@@ -13,115 +57,100 @@
         * [PHP Mess Detector (PHPMD)][18]: Code Analyzer
         * [phpcpd][4]: Copy/Paste Detector (CPD)
         * [phpdcd][5]: Dead Code Detector (DCD)
-* Installable via [Composer][3] or the [PEAR command line installer][11]:
-    * Provides a [Packagist][25] package which can be installed using the dependency manager [Composer][3].
+* Provides a [Packagist][25] package which can be installed using the dependency manager [Composer][3]. Click [here][24] for the package on [Packagist][25].
+* Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [phpDocumentor][2]. Click [here][1] for the API documentation.
+* Follows the following "standards" from the [PHP Framework Interoperability Group (FIG)][27]. PSR stands for PHP Standards Recommendation:
+    * [PSR-0][6]: Autoloading Standards
 
-      Click [here][24] for the package on [Packagist][25].
-    * Provides a [PEAR package][13] which can be installed using the package manager [PEAR installer][11].
+        > Aims to provide a standard file, class and namespace convention to allow plug-and-play code.
+    * [PSR-1][7]: Basic Coding Standard
 
-      Click [here][9] for the [PEAR channel][12].
-* Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [ApiGen][2].
+        > Aims to ensure a high level of technical interoperability between shared PHP code.
+    * [PSR-2][8]: Coding Style Guide
 
-  Click [here][1] for the current API documentation.
-* Follows the [PSR-0][6] requirements for autoloader interoperability.
-* Follows the [PSR-1][7] basic coding style guide.
-* Follows the [PSR-2][8] coding style guide.
-* Follows the [Semantic Versioning][20] Specification (SemVer) 2.0.0-rc.1.
+        > Provides a Coding Style Guide for projects looking to standardize their code.
+    * [PSR-4][26]: Autoloader
+
+        > A more modern take on autoloading reflecting advances in the ecosystem.
+* Follows the [Semantic Versioning][20] Specification (SemVer) 2.0.0.
 
 ## Requirements
 
+### Production
+
 * [PHP][17] >= 5.4
+* [Composer][3]
+
+### Development
+
+* [PHPUnit][19]
+* [phpcpd][4]
+* [phpdcd][5]
+* [PHP_CodeSniffer][14]
+* [PHP Mess Detector (PHPMD)][18]
+* [PDepend][9]
+* [phpDocumentor][2]
+* [php-coveralls][10]
 
 ## Usage
 
-The best documentation for **FlorianWolters\Component\Core\Immutable** are the unit tests, which are shipped in the package. You will find them installed into your [PEAR][10] repository, which on Linux systems is normally `/usr/share/php/test`.
+The best documentation for **FlorianWolters\Component\Core\Immutable** are the unit tests, which are shipped in the package.
 
 ## Installation
 
-### Local Installation
+**FlorianWolters\Component\Core\Immutable** should be installed using the dependency manager [Composer][3].
 
-**FlorianWolters\Component\Core\Immutable** should be installed using the dependency manager [Composer][3]. [Composer][3] can be installed with [PHP][6].
+> [Composer][3] is a tool for dependency management in [PHP][17]. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.
 
-    php -r "eval('?>'.file_get_contents('http://getcomposer.org/installer'));"
+The [Composer][3] installer can be downloaded with `php`.
+
+    php -r "readfile('https://getcomposer.org/installer');" | php
 
 > This will just check a few [PHP][17] settings and then download `composer.phar` to your working directory. This file is the [Composer][3] binary. It is a PHAR ([PHP][17] archive), which is an archive format for [PHP][17] which can be run on the command line, amongst other things.
->
-> Next, run the `install` command to resolve and download dependencies:
+
+> To resolve and download dependencies, run the `install` command:
 
     php composer.phar install
 
-### System-Wide Installation
-
-**FlorianWolters\Component\Core\Immutable** should be installed using the [PEAR installer][11]. This installer is the [PHP][17] community's de-facto standard for installing [PHP][17] components.
-
-    pear channel-discover pear.florianwolters.de
-    pear install --alldeps fw/Immutable
-
 ## As A Dependency On Your Component
-
-### Composer
 
 If you are creating a component that relies on **FlorianWolters\Component\Core\Immutable**, please make sure that you add **FlorianWolters\Component\Core\Immutable** to your component's `composer.json` file:
 
 ```json
 {
     "require": {
-        "florianwolters/component-core-immutable": "0.1.*"
+        "florianwolters/component-core-immutable": "0.2.*"
     }
 }
 ```
 
-### PEAR
+## Contributing
 
-If you are creating a component that relies on **FlorianWolters\Component\Core\Immutable**, please make sure that you add **FlorianWolters\Component\Core\Immutable** to your component's `package.xml` file:
+See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-```xml
-<dependencies>
-  <required>
-    <package>
-      <name>Immutable</name>
-      <channel>pear.florianwolters.de</channel>
-      <min>0.1.0</min>
-      <max>0.1.99</max>
-    </package>
-  </required>
-</dependencies>
-```
+## Credits
 
-## Development Environment
-
-If you want to patch or enhance this component, you will need to create a suitable development environment. The easiest way to do that is to install [phix4componentdev][16]:
-
-    # phix4componentdev
-    pear channel-discover pear.phix-project.org
-    pear install phix/phix4componentdev
-
-You can then clone the Git repository:
-
-    # PHP-Component-Core-Immutable
-    git clone http://github.com/FlorianWolters/PHP-Component-Core-Immutable
-
-Then, install a local copy of this component's dependencies to complete the development environment:
-
-    # build vendor/ folder
-    phing build-vendor
-
-To make life easier for you, common tasks (such as running unit tests, generating code review analytics, and creating the [PEAR package][13]) have been automated using [phing][15]. You'll find the automated steps inside the `build.xml` file that ships with the component.
-
-Run the command `phing` in the component's top-level folder to see the full list of available automated tasks.
+* [Florian Wolters](https://github.com/FlorianWolters)
+* [All Contributors](https://github.com/FlorianWolters/PHP-Component-Util-Command/contributors)
 
 ## License
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is free software: you can redistribute it and/or modify it under the
+terms of the GNU Lesser General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
+You should have received a copy of the GNU Lesser General Public License along
+with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
 
 [1]: http://blog.florianwolters.de/PHP-Component-Core-Immutable
-     "FlorianWolters\Component\Core | Application Programming Interface (API) documentation"
-[2]: http://apigen.org
-     "ApiGen | API documentation generator for PHP 5.3.+"
+     "Application Programming Interface (API) documentation"
+[2]: http://phpdoc.org
+     "phpDocumentor 2"
 [3]: http://getcomposer.org
      "Composer"
 [4]: https://github.com/sebastianbergmann/phpcpd
@@ -134,20 +163,12 @@ You should have received a copy of the GNU Lesser General Public License along w
      "PSR-1 basic coding style guide"
 [8]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
      "PSR-2 coding style guide"
-[9]: http://pear.florianwolters.de
-     "PEAR channel of Florian Wolters"
-[10]: http://pear.php.net
-      "PEAR - PHP Extension and Application Repository"
-[11]: http://pear.php.net/manual/en/guide.users.commandline.cli.php
-      "Manual :: Command line installer (PEAR)"
-[12]: http://pear.php.net/manual/en/guide.users.concepts.channel.php
-      "Manual :: PEAR Channels"
-[13]: http://pear.php.net/manual/en/guide.users.concepts.package.php
-      "Manual :: PEAR Packages"
+[9]: http://pdepend.org
+     "PHP Depend - Software Metrics for PHP"
+[10]: https://github.com/satooshi/php-coveralls
+      "satooshi/php-coveralls · GitHub"
 [14]: http://pear.php.net/package/PHP_CodeSniffer
       "PHP_CodeSniffer"
-[15]: http://phing.info
-      "Phing"
 [16]: https://github.com/stuartherbert/phix4componentdev
       "stuartherbert/phix4componentdev · GitHub"
 [17]: http://php.net
@@ -162,3 +183,9 @@ You should have received a copy of the GNU Lesser General Public License along w
       "florianwolters/component-core-immutable - Packagist"
 [25]: http://packagist.org
       "Packagist"
+[26]: http://php-fig.org/psr/psr-4
+      "PSR-4: Improved Autoloading"
+[27]: http://php-fig.org
+      "PHP-FIG — PHP Framework Interop Group"
+[28]: http://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html
+      "Immutable Objects (The Java Tutorials)"
